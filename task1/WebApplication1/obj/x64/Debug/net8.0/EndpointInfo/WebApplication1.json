@@ -1,0 +1,19 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Home",
+    "description": "An ASP.NET Core Web API for managing ToDo items",
+    "termsOfService": "https://example.com/terms",
+    "contact": {
+      "name": "Example Contact",
+      "url": "https://example.com/contact"
+    },
+    "license": {
+      "name": "Example License",
+      "url": "https://example.com/license"
+    },
+    "version": "v1"
+  },
+  "paths": { },
+  "components": { }
+}

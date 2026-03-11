@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApplication1R</name>
+    </assembly>
+    <members>
+        <member name="M:WebApplication1R.Controllers.UserController.GetUserInfo(System.String)">
+            <summary>
+            Возвращает данные пользователя по указанному ID 
+            </summary>
+            <param name="userId">идентификатор пользователя</param>
+            <returns> user info</returns>
+        </member>
+        <member name="M:WebApplication1R.Controllers.UserController.AddFrend(System.String,System.String)">
+            <summary>
+            Пытается добавить друга по id к указанному пользователю
+            </summary>
+            <param name="userId">идентификатор пользователя</param>
+            <param name="frendId">идентификатор друга</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApplication1R.Controllers.UserController.DeleteFrend(System.String,System.String)">
+            <summary>
+            Пытается удалить друга по id к указанному пользователю
+            </summary>
+            <param name="userId">идентификатор пользователя</param>
+            <param name="frendId">идентификатор друга</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

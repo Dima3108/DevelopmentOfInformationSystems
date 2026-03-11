@@ -1,0 +1,6 @@
+@WebApplication1R_HostAddress = http://localhost:5266
+
+GET {{WebApplication1R_HostAddress}}
+Accept: text/html
+
+###

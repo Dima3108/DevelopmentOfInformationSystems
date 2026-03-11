@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "WebApplication1.Controllers.HomeController",
+    "Method": "Index",
+    "RelativePath": "Home/Index",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

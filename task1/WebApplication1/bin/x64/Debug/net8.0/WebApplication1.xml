@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApplication1</name>
+    </assembly>
+    <members>
+        <member name="M:WebApplication1.Controllers.HomeController.Index">
+            <summary>
+            Главная страница приложения
+            </summary>
+            <remarks>
+            return html
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:WebApplication1.Controllers.UserController.Index">
+            <summary>
+            Возвращает главную общую страницу
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
