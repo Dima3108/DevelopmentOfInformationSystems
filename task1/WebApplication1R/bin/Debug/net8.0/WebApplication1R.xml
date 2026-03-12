@@ -4,12 +4,25 @@
         <name>WebApplication1R</name>
     </assembly>
     <members>
+        <member name="M:WebApplication1R.Controllers.UserController.Index">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:WebApplication1R.Controllers.UserController.GetUserInfo(System.String)">
             <summary>
-            Возвращает данные пользователя по указанному ID 
+            Возвращает данные пользователя по указанному ID (просмотр анкеты пользователя)
             </summary>
             <param name="userId">идентификатор пользователя</param>
             <returns> user info</returns>
+        </member>
+        <member name="M:WebApplication1R.Controllers.UserController.ViewFriendsList(System.String)">
+            <summary>
+            Возвращает список друзей для указанного пользователя
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
         </member>
         <member name="M:WebApplication1R.Controllers.UserController.AddFrend(System.String,System.String)">
             <summary>

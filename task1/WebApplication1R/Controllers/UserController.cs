@@ -3,22 +3,39 @@
 namespace WebApplication1R.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("/[controller]")]
     [Produces("application/json")]
     public class UserController : ControllerBase
     {
-        /*  public IActionResult Index()
-          {
-              return View();
-          }*/
         /// <summary>
-        /// Возвращает данные пользователя по указанному ID 
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("/[Controller]/[Action]")]
+        public string Index()
+          {
+            return "hellow world";
+          }
+        /// <summary>
+        /// Возвращает данные пользователя по указанному ID (просмотр анкеты пользователя)
         /// </summary>
         /// <param name="userId">идентификатор пользователя</param>
         /// <returns> user info</returns>
         [HttpPost]
         [Route("/[Controller]/[Action]")]
         public JsonResult GetUserInfo(string userId)
+        {
+            return new JsonResult("no data");
+        }
+        /// <summary>
+        /// Возвращает список друзей для указанного пользователя
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("/[Controller]/[Action]")]
+        public JsonResult ViewFriendsList(string userId)
         {
             return new JsonResult("no data");
         }

@@ -1,5 +1,36 @@
 [
   {
+    "ContainingType": "WebApplication1R.Controllers.NewsFeedController",
+    "Method": "CreateNews",
+    "RelativePath": "NewsFeed/CreateNews",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "news",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "WebApplication1R.Controllers.UserController",
     "Method": "AddFrend",
     "RelativePath": "User/AddFrend",
@@ -74,24 +105,37 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApplication1R.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
+    "ContainingType": "WebApplication1R.Controllers.UserController",
+    "Method": "Index",
+    "RelativePath": "User/Index",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1R.WeatherForecast, WebApplication1R, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.String",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 200
       }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1R.Controllers.UserController",
+    "Method": "ViewFriendsList",
+    "RelativePath": "User/ViewFriendsList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": []
   }
 ]

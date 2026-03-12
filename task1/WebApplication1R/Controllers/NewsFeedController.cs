@@ -3,14 +3,15 @@
 namespace WebApplication1R.Controllers
 {
     [ApiController]
-
+    [Route("/[controller]")]
     public class NewsFeedController:Microsoft.AspNetCore.Mvc.ControllerBase
 
     {
         [HttpPost]
-        public IActionResult CreateNews(string news,string userId)
+        [Route("/[Controller]/[Action]")]
+        public string CreateNews(string news,string userId)
         {
-            return NotFound();
+            return "";
         }
     }
 }

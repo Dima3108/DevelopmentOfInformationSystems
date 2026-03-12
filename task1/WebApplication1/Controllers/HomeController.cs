@@ -20,10 +20,10 @@ namespace WebApplication1.Controllers
         /// </remarks>
         /// <returns></returns>
         [HttpGet]
-        //[Route("/[Controller]/[Action]")]
-        public IActionResult Index()
+        [Route("/[Controller]/[Action]")]
+        public string Index()
         {
-            return View();
+            return "hellow home";
         }
 
         public IActionResult Privacy()

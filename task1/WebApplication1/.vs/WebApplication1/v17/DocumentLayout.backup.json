@@ -9,16 +9,7 @@
       "AbsoluteMoniker": "D:0:0:{B3A7E0CA-9FB3-4D40-A9B8-0369F80B6594}|..\\WebApplication1R\\WebApplication1R.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\developmentofinformationsystems\\task1\\webapplication1r\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3A7E0CA-9FB3-4D40-A9B8-0369F80B6594}|..\\WebApplication1R\\WebApplication1R.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\developmentofinformationsystems\\task1\\webapplication1r\\webapplication1r.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3A7E0CA-9FB3-4D40-A9B8-0369F80B6594}|..\\WebApplication1R\\WebApplication1R.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\developmentofinformationsystems\\task1\\webapplication1r\\webapplication1r.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3A7E0CA-9FB3-4D40-A9B8-0369F80B6594}|..\\WebApplication1R\\WebApplication1R.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\developmentofinformationsystems\\task1\\webapplication1r\\libman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3A7E0CA-9FB3-4D40-A9B8-0369F80B6594}|..\\WebApplication1R\\WebApplication1R.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\developmentofinformationsystems\\task1\\webapplication1r\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{B3A7E0CA-9FB3-4D40-A9B8-0369F80B6594}|..\\WebApplication1R\\WebApplication1R.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\developmentofinformationsystems\\task1\\webapplication1r\\tz.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B3A7E0CA-9FB3-4D40-A9B8-0369F80B6594}|..\\WebApplication1R\\WebApplication1R.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\developmentofinformationsystems\\task1\\webapplication1r\\controllers\\newsfeedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -32,7 +23,19 @@
       "RelativeMoniker": "D:0:0:{72D4512D-8F3D-4A17-A822-E2D5A3660B6B}|WebApplication1.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3A7E0CA-9FB3-4D40-A9B8-0369F80B6594}|..\\WebApplication1R\\WebApplication1R.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\developmentofinformationsystems\\task1\\webapplication1r\\tz.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{B3A7E0CA-9FB3-4D40-A9B8-0369F80B6594}|..\\WebApplication1R\\WebApplication1R.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\developmentofinformationsystems\\task1\\webapplication1r\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3A7E0CA-9FB3-4D40-A9B8-0369F80B6594}|..\\WebApplication1R\\WebApplication1R.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\developmentofinformationsystems\\task1\\webapplication1r\\webapplication1r.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3A7E0CA-9FB3-4D40-A9B8-0369F80B6594}|..\\WebApplication1R\\WebApplication1R.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\developmentofinformationsystems\\task1\\webapplication1r\\webapplication1r.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3A7E0CA-9FB3-4D40-A9B8-0369F80B6594}|..\\WebApplication1R\\WebApplication1R.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\developmentofinformationsystems\\task1\\webapplication1r\\libman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3A7E0CA-9FB3-4D40-A9B8-0369F80B6594}|..\\WebApplication1R\\WebApplication1R.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\developmentofinformationsystems\\task1\\webapplication1r\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B3A7E0CA-9FB3-4D40-A9B8-0369F80B6594}|..\\WebApplication1R\\WebApplication1R.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\developmentofinformationsystems\\task1\\webapplication1r\\webapplication1r.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
@@ -57,36 +60,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WebApplication1R.http",
-              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1R\\WebApplication1R.http",
-              "RelativeDocumentMoniker": "..\\WebApplication1R\\WebApplication1R.http",
-              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1R\\WebApplication1R.http",
-              "RelativeToolTip": "..\\WebApplication1R\\WebApplication1R.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-03-11T10:37:31.041Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "WebApplication1R",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1R\\WebApplication1R.csproj",
               "RelativeDocumentMoniker": "..\\WebApplication1R\\WebApplication1R.csproj",
               "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1R\\WebApplication1R.csproj",
               "RelativeToolTip": "..\\WebApplication1R\\WebApplication1R.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-11T10:35:30.27Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T10:35:30.27Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "libman.json",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1R\\libman.json",
               "RelativeDocumentMoniker": "..\\WebApplication1R\\libman.json",
@@ -94,12 +83,11 @@
               "RelativeToolTip": "..\\WebApplication1R\\libman.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-11T10:35:19.727Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T10:35:19.727Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1R\\appsettings.json",
               "RelativeDocumentMoniker": "..\\WebApplication1R\\appsettings.json",
@@ -107,21 +95,19 @@
               "RelativeToolTip": "..\\WebApplication1R\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-11T10:35:13.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T10:35:13.805Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "NewsFeedController.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1R\\Controllers\\NewsFeedController.cs",
               "RelativeDocumentMoniker": "..\\WebApplication1R\\Controllers\\NewsFeedController.cs",
               "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1R\\Controllers\\NewsFeedController.cs",
               "RelativeToolTip": "..\\WebApplication1R\\Controllers\\NewsFeedController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T10:32:18.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T10:32:18.882Z"
             },
             {
               "$type": "Document",
@@ -131,14 +117,13 @@
               "RelativeDocumentMoniker": "..\\WebApplication1R\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1R\\Controllers\\UserController.cs",
               "RelativeToolTip": "..\\WebApplication1R\\Controllers\\UserController.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAwwDEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAqwBQAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T09:43:48.484Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T09:43:48.484Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "TZ.txt",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1R\\TZ.txt",
               "RelativeDocumentMoniker": "..\\WebApplication1R\\TZ.txt",
@@ -154,16 +139,16 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1R\\Program.cs",
               "RelativeDocumentMoniker": "..\\WebApplication1R\\Program.cs",
-              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1R\\Program.cs*",
-              "RelativeToolTip": "..\\WebApplication1R\\Program.cs*",
-              "ViewState": "AgIAADEAAAAAAAAAAAAAADwAAAAgAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1R\\Program.cs",
+              "RelativeToolTip": "..\\WebApplication1R\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-11T09:42:34.753Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "WebApplication1.csproj",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1\\WebApplication1.csproj",
               "RelativeDocumentMoniker": "WebApplication1.csproj",
@@ -175,20 +160,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T10:18:54.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBYAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T08:55:21.071Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T08:55:21.071Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
+              "Title": "WebApplication1R.http",
+              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1R\\WebApplication1R.http",
+              "RelativeDocumentMoniker": "..\\WebApplication1R\\WebApplication1R.http",
+              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1R\\WebApplication1R.http",
+              "RelativeToolTip": "..\\WebApplication1R\\WebApplication1R.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-03-11T10:37:31.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1R\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "..\\WebApplication1R\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1R\\WeatherForecast.cs",
+              "RelativeToolTip": "..\\WebApplication1R\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T10:41:57.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -200,20 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T10:18:54.126Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "WebApplication1R.csproj",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1R\\WebApplication1R.csproj",
               "RelativeDocumentMoniker": "..\\WebApplication1R\\WebApplication1R.csproj",
@@ -225,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "TZ.txt",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\DevelopmentOfInformationSystems\\task1\\WebApplication1\\TZ.txt",
               "RelativeDocumentMoniker": "TZ.txt",

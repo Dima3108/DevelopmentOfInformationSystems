@@ -40,7 +40,18 @@ namespace WebApplication1R
             });
 
             var app = builder.Build();
-
+            //MiddleWare
+            app.Use(async (context, netx) =>
+            {
+                /*
+                 * –едиректит на существующий сокращенный путь
+                 */
+                if (context.Request.Path.ToString().ToLower()==("/swagger"))
+                {
+                    context.Request.Path = "/";
+                }
+                await netx.Invoke(context);
+            });
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
@@ -55,10 +66,10 @@ namespace WebApplication1R
             app.UseAuthorization();
 
 
-            //  app.MapControllers();
-            app.MapControllerRoute(
+              app.MapControllers();
+           /* app.MapControllerRoute(
       name: "default",
-      pattern: "{controller=User}/{action=Index}/{id?}");
+      pattern: "{controller=User}/{action=Index}");*/
             app.Run();
         }
     }

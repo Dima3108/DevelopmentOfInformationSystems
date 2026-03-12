@@ -2,8 +2,8 @@
 
 namespace WebApplication1.Controllers
 {
-    //[ApiController]
-   // [Route("api/[controller]")]
+    [ApiController]
+    [Route("api/[controller]")]
    // [Produces("application/json")]
     public class UserController : Controller
     {
@@ -12,9 +12,9 @@ namespace WebApplication1.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public IActionResult Index()
+        public string Index()
         {
-            return View();
+            return "hellow world!";
         }
     }
 }
