@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "wqF9k+Nv1c4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Дмитрий\\Github\\DevelopmentOfInformationSystems\\task4\\ConsoleApp1\\ConsoleApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Дмитрий\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.25\\microsoft.windowsdesktop.app.ref.8.0.25.nupkg.sha512",
+    "C:\\Users\\Дмитрий\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.25\\microsoft.netcore.app.ref.8.0.25.nupkg.sha512",
+    "C:\\Users\\Дмитрий\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.25\\microsoft.aspnetcore.app.ref.8.0.25.nupkg.sha512",
+    "C:\\Users\\Дмитрий\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.25\\microsoft.netcore.app.host.win-x64.8.0.25.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Произошла ошибка при получении данных уязвимости пакета: Не удалось загрузить индекс служб для источника https://api.nuget.org/v3/index.json.",
+      "projectPath": "C:\\Users\\Дмитрий\\Github\\DevelopmentOfInformationSystems\\task4\\ConsoleApp1\\ConsoleApp1.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Дмитрий\\Github\\DevelopmentOfInformationSystems\\task4\\ConsoleApp1\\ConsoleApp1.csproj",
+      "targetGraphs": []
+    }
+  ]
+}
