@@ -1,10 +1,13 @@
-﻿using System.Net;
+﻿using Microsoft.AspNetCore.Hosting.Server;
+using Microsoft.AspNetCore.Hosting.Server.Features;
+using System.Net;
 using System.Net.Sockets;
 
 namespace WebApplication1_1
 {
     public class SharedData
     {
+        private static Dictionary<string, string> _cache=new Dictionary<string, string>();
         public enum ReplicatType
         {
             Master=0,
@@ -25,16 +28,51 @@ namespace WebApplication1_1
             (new Random(now.Second*1000000+now.Millisecond+60*now.Minute*1000000)).NextBytes(j);
             ThisID=Convert.ToBase64String(j);   
         }
-        public static TcpListener listener;
-        public static void InitTcpListener()
+        //public static TcpListener listener;
+        private static WebApplicationBuilder locServer;
+        public static async Task InitTcpListener()
         {
-            listener = new TcpListener(0);
-            listener.Start();
-            int port_=((IPEndPoint)listener.LocalEndpoint).Port;
-            using(HttpClient cl=new HttpClient())
+            locServer = WebApplication.CreateBuilder();
+            locServer.WebHost.ConfigureKestrel(options =>
             {
-                string r = cl.GetStringAsync($"http://localhost:{PORT}/WeatherForecast/RegistredSlave?port='{port_}'").Result;
+                options.ListenLocalhost(0);
+            });
+            var app=locServer.Build();
+            app.MapPost("setinfo", (string token,string info) =>
+            {
+                Console.WriteLine(info);
+                _cache[token] = info;
+                return "succes";
+            });
+            app.MapGet("getinfo", (string token) =>
+            {
+                return _cache[token];
+            });
+            await app.RunAsync();
+            Console.WriteLine("loc server run");
+            var server = app.Services.GetRequiredService<IServer>();
+            var addressFeature = server.Features.Get<IServerAddressesFeature>();
+            int port_ = 0;
+            // Iterate through the addresses to get the ports
+            foreach (var address in addressFeature.Addresses)
+            {
+                Console.WriteLine($"Kestrel is listening on: {address}");
+                // You can parse the URI to get the port number
+                var uri = new Uri(address);
+                Console.WriteLine($"Port: {uri.Port}");
+                port_ = Convert.ToInt32(uri.Port);  
             }
+
+            // listener = new TcpListener(0);
+            // listener.Start(3);
+            //int port_=locServer.WebHost.
+            using (HttpClient cl=new HttpClient())
+            {
+                string r =await cl.GetStringAsync($"http://localhost:{PORT}/WeatherForecast/RegistredSlave?port={port_}");
+                Console.WriteLine($"returned ='{r}'");
+            }
+            await app.WaitForShutdownAsync();
+            await Task.Delay(-1);
         }
         public static bool CheckAvailability()
         {
@@ -49,7 +87,7 @@ namespace WebApplication1_1
                     }
                     else
                     {
-                        Console.WriteLine($"matser id='{r}'");
+                       // Console.WriteLine($"matser id='{r}'");
 return true;
                     }
                 }

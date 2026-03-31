@@ -6,6 +6,7 @@ namespace WebApplication1_1.Controllers
     [Route("WeatherForecast")]
     public class WeatherForecastController : ControllerBase
     {
+        private static HashSet<int> sPorts = new HashSet<int>();
 
         private static readonly string[] Summaries = new[]
         {
@@ -19,10 +20,11 @@ namespace WebApplication1_1.Controllers
             _logger = logger;
         }
         [HttpGet]
-        [Route("RegistredSlave/{port}")]
+        [Route($"RegistredSlave")]
         public string RegistredSlave(int port)
         {
             Console.WriteLine($"порт {port} зарегестрирован!");
+            sPorts.Add(port);
             return "";
         }
         [HttpGet]
@@ -51,10 +53,16 @@ namespace WebApplication1_1.Controllers
             return Content(htmlContent,"text/html");
         }
         [HttpPost]
-        [Route("savedata/{inpname}/{inpvalue}")]
+        [Route("savedata")]
         public IActionResult savedata(string inpname,string inpvalue)
         {
            return Redirect("/WeatherForecast/Index");
+        }
+        [HttpGet]
+        [Route("SlavesPorts")]
+        public JsonResult SlavesPorts()
+        {
+            return new  JsonResult(sPorts.ToArray());
         }
     }
 }

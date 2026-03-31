@@ -52,7 +52,7 @@
   {
     "ContainingType": "WebApplication1_1.Controllers.WeatherForecastController",
     "Method": "RegistredSlave",
-    "RelativePath": "WeatherForecast/RegistredSlave/{port}",
+    "RelativePath": "WeatherForecast/RegistredSlave",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -60,7 +60,7 @@
       {
         "Name": "port",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -78,7 +78,7 @@
   {
     "ContainingType": "WebApplication1_1.Controllers.WeatherForecastController",
     "Method": "savedata",
-    "RelativePath": "WeatherForecast/savedata/{inpname}/{inpvalue}",
+    "RelativePath": "WeatherForecast/savedata",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -86,14 +86,24 @@
       {
         "Name": "inpname",
         "Type": "System.String",
-        "IsRequired": true
+        "IsRequired": false
       },
       {
         "Name": "inpvalue",
         "Type": "System.String",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1_1.Controllers.WeatherForecastController",
+    "Method": "SlavesPorts",
+    "RelativePath": "WeatherForecast/SlavesPorts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

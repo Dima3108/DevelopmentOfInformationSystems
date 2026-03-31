@@ -6,6 +6,7 @@ namespace WebApplication1_1
         private static bool IsInit = false;
         private static WebApplicationBuilder? builder = null;
         private static WebApplication? app;
+        private static Task serverTask;
         public static void Main(string[] args)
         {
             builder = WebApplication.CreateBuilder(args);
@@ -15,7 +16,7 @@ namespace WebApplication1_1
             timer.AutoReset = true;
             timer.Elapsed += (source, e) =>
             {
-                Console.WriteLine("timer tick");
+                //Console.WriteLine("timer tick");
                 bool r = SharedData.CheckAvailability();
                 if (!IsInit && r == false)
                 {
@@ -47,8 +48,9 @@ namespace WebApplication1_1
                 else if (r == true && IsInit == false)
                 {
                     SharedData.SetThisReplica(SharedData.ReplicatType.Slave);
-                    SharedData.InitTcpListener();
+                    serverTask = Task.Run(async () =>await SharedData.InitTcpListener());
                 }
+                timer.Stop();
             };
             timer.Enabled = true;
             // timer.Start();

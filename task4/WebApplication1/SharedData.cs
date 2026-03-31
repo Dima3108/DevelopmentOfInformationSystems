@@ -1,4 +1,5 @@
 ﻿using System.Net;
+using System.Net.Sockets;
 
 namespace WebApplication1
 {
@@ -48,6 +49,12 @@ return true;
             {
                 return false;
             }
+        }
+        private static TcpListener listener;
+        private static async void SeverTask()
+        {
+            listener = new TcpListener(0);
+            listener.Start();
         }
     }
 }
