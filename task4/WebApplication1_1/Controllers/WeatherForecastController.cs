@@ -25,7 +25,7 @@ namespace WebApplication1_1.Controllers
         {
             Console.WriteLine($"порт {port} зарегестрирован!");
             sPorts.Add(port);
-            return "";
+            return $"port is registred!";
         }
         [HttpGet]
         [Route("GetId")]
@@ -47,16 +47,35 @@ namespace WebApplication1_1.Controllers
         }
         [HttpGet]
         [Route($"Index")]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var htmlContent = System.IO.File.ReadAllText("/Controllers/weatherforecast.html");
+            
+            var htmlContent =await  System.IO.File.ReadAllTextAsync(AppDomain.CurrentDomain.BaseDirectory+@"\Controllers\weatherforecast.html");
             return Content(htmlContent,"text/html");
+            
         }
+        private readonly Random random = new Random();
         [HttpPost]
         [Route("savedata")]
-        public IActionResult savedata(string inpname,string inpvalue)
+        public IActionResult savedata(/*string inpname,string inpvalue*/)
         {
-           return Redirect("/WeatherForecast/Index");
+            string inpname =(string) HttpContext.Request.Form["inpname"];
+            string inpvalue = (string)HttpContext.Request.Form["inpvalue"];
+            Console.WriteLine($"['{inpname}']:'{inpvalue}'");
+            int key_pos = random.Next(0, sPorts.Count);
+            int port_ = sPorts.ToArray()[key_pos];
+            using (HttpClient client = new HttpClient())
+            {
+                var values = new Dictionary<string, string>
+{
+    { $"token","'"+ inpname+"'" },
+    { "info","'"+ inpvalue+"'" }
+};
+                var content = new FormUrlEncodedContent(values);
+                var req = client.PostAsync($"http://localhost:{port_}/setinfo", content).Result;
+                Console.WriteLine($"result='{req.Content.ReadAsStringAsync().Result}'");
+            }
+           return Redirect(@"Index");
         }
         [HttpGet]
         [Route("SlavesPorts")]

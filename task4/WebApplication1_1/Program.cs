@@ -18,7 +18,8 @@ namespace WebApplication1_1
             {
                 //Console.WriteLine("timer tick");
                 bool r = SharedData.CheckAvailability();
-                if (!IsInit && r == false)
+                //Console.WriteLine(r);
+                if ( r == false)
                 {
                     SharedData.SetThisReplica(SharedData.ReplicatType.Master);
                     IsInit = true;
@@ -44,13 +45,26 @@ namespace WebApplication1_1
                         pattern: "{controller=WeatherForecast}/{action=Get}");
                     Console.WriteLine("this is master");
                     app.Run();
+                    //timer.Stop();
                 }
                 else if (r == true && IsInit == false)
                 {
+                    IsInit = true;
                     SharedData.SetThisReplica(SharedData.ReplicatType.Slave);
-                    serverTask = Task.Run(async () =>await SharedData.InitTcpListener());
+                    Console.WriteLine("runtask");
+                    SharedData.InitTcpListener();
+                   // serverTask = Task.Run( () =>SharedData.InitTcpListener());
+                  
+                   // serverTask.Wait();
                 }
-                timer.Stop();
+                else if(r==true&&IsInit==true&& SharedData.this_type == SharedData.ReplicatType.Slave)
+                {
+                    SharedData.SendPortToMaster();
+                }
+                else
+                {
+                    //timer.Stop();
+                }
             };
             timer.Enabled = true;
             // timer.Start();

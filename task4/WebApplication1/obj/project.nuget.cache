@@ -9,15 +9,5 @@
     "C:\\Users\\Дмитрий\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.25\\microsoft.aspnetcore.app.ref.8.0.25.nupkg.sha512",
     "C:\\Users\\Дмитрий\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.25\\microsoft.netcore.app.host.win-x64.8.0.25.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "message": "Произошла ошибка при получении данных уязвимости пакета: Не удалось загрузить индекс служб для источника https://api.nuget.org/v3/index.json.",
-      "projectPath": "C:\\Users\\Дмитрий\\Github\\DevelopmentOfInformationSystems\\task4\\WebApplication1\\WebApplication1.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\Дмитрий\\Github\\DevelopmentOfInformationSystems\\task4\\WebApplication1\\WebApplication1.csproj",
-      "targetGraphs": []
-    }
-  ]
+  "logs": []
 }

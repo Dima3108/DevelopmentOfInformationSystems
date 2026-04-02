@@ -82,18 +82,7 @@
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "inpname",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "inpvalue",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
