@@ -95,35 +95,35 @@ namespace WebApplication1_1.Controllers
         }
         [HttpGet]
         [Route("GetAllData")]
-        public JsonResult GetAllData()
+        public string GetAllData()
         {
-            Dictionary<string, string>[]slavesContents=new Dictionary<string, string>[sPorts.Count];
+          var slavesContents=new Models.UserDataModel[sPorts.Count][];
             int[] ports_ = sPorts.ToArray();
             Task.Run(async () => {
-                for (int i = 0; i < sPorts.Count; i++)
+                for (int i = 0; i < ports_.Length; i++)
                 {
                     using (HttpClient client = new HttpClient())
                     {
-                        var res = await client.GetFromJsonAsync<Dictionary<string,string>>($"http://localhost:{ports_[i]}/getall");
-                        slavesContents[i] = new Dictionary<string, string>();
-                        if (res != null)
+                        var res = await client.GetStringAsync($"http://localhost:{ports_[i]}/getall");
+                        slavesContents[i] = System.Text.Json.JsonSerializer.Deserialize<Models.UserDataModel[]>(res);
+                       /* if (res != null)
                         {
                             await Task.Run(() =>
                             {
                                 foreach(var item in res)
                                     slavesContents[i].Add(item.Key, item.Value);    
                             });
-                        }
+                        }*/
                     }
                 }
             }).Wait();
-            Dictionary<string, string> total = new Dictionary<string, string>();
+            var total = new List<Models.UserDataModel>();
             foreach(var slav in slavesContents)
             {
                 foreach(var item in slav)
-                    total.Add(item.Key, item.Value);
+                    total.Add(item);
             }
-            return new JsonResult(slavesContents);
+            return System.Text.Json.JsonSerializer.Serialize(total.ToArray());
         }
     }
 }

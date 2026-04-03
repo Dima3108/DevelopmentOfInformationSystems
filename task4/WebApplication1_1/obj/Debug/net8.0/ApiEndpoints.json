@@ -21,6 +21,26 @@
   },
   {
     "ContainingType": "WebApplication1_1.Controllers.WeatherForecastController",
+    "Method": "GetAllData",
+    "RelativePath": "WeatherForecast/GetAllData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1_1.Controllers.WeatherForecastController",
     "Method": "GetID",
     "RelativePath": "WeatherForecast/GetId",
     "HttpMethod": "GET",

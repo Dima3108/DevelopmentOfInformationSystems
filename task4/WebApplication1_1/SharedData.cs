@@ -94,7 +94,13 @@ namespace WebApplication1_1
             });
             locapp.MapGet("getall", () =>
             {
-                return JsonContent.Create(_cache);
+                var arr_ = _cache.ToArray();
+                Models.UserDataModel[]mod=new Models.UserDataModel[arr_.Length];
+                Parallel.For(0, arr_.Length, i =>
+                {
+                    mod[i] = new Models.UserDataModel(arr_[i].Key, arr_[i].Value);
+                });
+                return System.Text.Json.JsonSerializer.Serialize(mod);
             });
             locapp.Start();
             Console.WriteLine("loc server run");

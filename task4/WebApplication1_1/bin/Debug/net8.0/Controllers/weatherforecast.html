@@ -22,5 +22,35 @@
             Отправить
         </button>
     </form>
+    <div id="content">
+        <ul id="usData">
+
+        </ul>
+    </div>
+    <script defer>
+        function UpdateData() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'getalldata');
+            xhr.onload = () => {
+                if (xhr.status == 200) {
+                    var data_ = JSON.parse(xhr.response);
+                    var content_ = document.getElementById("usData");
+                    for (var i = 0; i < data_.length; i++) {
+                        let f = "<li>";
+                        f += "<details> <summary>";
+                        f += data_[i].token;
+                        f += "</summary>";
+                        f += data_[i].value;
+                        f += "</details>";
+                        f += "</li>";
+                        content_.innerHTML += f;
+                    }
+                }
+            };
+            xhr.send();
+        }
+        UpdateData();
+    </script>
 </body>
+
 </html>
