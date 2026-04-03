@@ -41,7 +41,11 @@ namespace WebApplication1_1
             {
                 var res = cl.GetAsync($"http://localhost:{PORT}/WeatherForecast/RegistredSlave?port={port_}").Result;
                 var r = res.Content.ReadAsStringAsync().Result;
-                Console.WriteLine($"returned ='{r}'");
+                if (r == "port is registred!")
+                {
+                    Console.WriteLine($"returned ='{r}'");
+                }
+
             }
         }
         public static void InitTcpListener()
@@ -56,12 +60,12 @@ namespace WebApplication1_1
             // Получаем назначенный системой порт
             IPEndPoint boundEndPoint = (IPEndPoint)socket.LocalEndPoint;
             Console.WriteLine($"Доступный порт: {boundEndPoint.Port}");
-             port_ = boundEndPoint.Port;
+            port_ = boundEndPoint.Port;
 
             locServer = WebApplication.CreateBuilder();
             locServer.WebHost.UseUrls("http://*:0");
             Console.WriteLine("server create");
-            
+
             /*locServer.Services.Configure<SocketTransportOptions>(options =>
             {
                 options.CreateBoundListenSocket = (enpoint) =>
@@ -72,31 +76,35 @@ namespace WebApplication1_1
             Console.WriteLine("server port config");
             locapp = locServer.Build();
             Console.WriteLine("sever build");
-/*var server = locapp.Services.GetRequiredService<IServer>();
-                var addressFeature = server.Features.Get<IServerAddressesFeature>();
-              */ 
-                // Iterate through the addresses to get the ports
-                
-                
-                locapp.MapPost("setinfo", (string token, string info) =>
-                {
-                    Console.WriteLine(info);
-                    _cache[token] = info;
-                    return $"succes {SharedData.ThisID}";
-                });
-                locapp.MapGet("getinfo", (string token) =>
-                {
-                    return _cache[token];
-                });
-                 locapp.Start();
-                Console.WriteLine("loc server run");
+            /*var server = locapp.Services.GetRequiredService<IServer>();
+                            var addressFeature = server.Features.Get<IServerAddressesFeature>();
+                          */
+            // Iterate through the addresses to get the ports
+
+
+            locapp.MapPost("setinfo", (string token, string info) =>
+            {
+                Console.WriteLine(info);
+                _cache[token] = info;
+                return $"succes {SharedData.ThisID}";
+            });
+            locapp.MapGet("getinfo", (string token) =>
+            {
+                return _cache[token];
+            });
+            locapp.MapGet("getall", () =>
+            {
+                return JsonContent.Create(_cache);
+            });
+            locapp.Start();
+            Console.WriteLine("loc server run");
             var server = locapp.Services.GetRequiredService<IServer>();
             var addressFeature = server.Features.Get<IServerAddressesFeature>();
 
             foreach (var address in addressFeature.Addresses)
             {
                 Console.WriteLine($"Kestrel is listening on: {address}");
-                var uri=new Uri(address);
+                var uri = new Uri(address);
                 port_ = uri.Port;
             }
             SendPortToMaster();
@@ -105,8 +113,8 @@ namespace WebApplication1_1
             //int port_=locServer.WebHost.
 
             locapp.WaitForShutdown();
-               // await Task.Delay(-1);
-          //  });
+            // await Task.Delay(-1);
+            //  });
 
         }
         public static bool CheckAvailability()

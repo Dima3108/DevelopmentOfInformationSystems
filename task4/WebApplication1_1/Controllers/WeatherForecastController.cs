@@ -23,9 +23,17 @@ namespace WebApplication1_1.Controllers
         [Route($"RegistredSlave")]
         public string RegistredSlave(int port)
         {
-            Console.WriteLine($"порт {port} зарегестрирован!");
-            sPorts.Add(port);
-            return $"port is registred!";
+            if (sPorts.Contains(port) == false)
+            {
+                Console.WriteLine($"порт {port} зарегестрирован!");
+                sPorts.Add(port);
+
+                return $"port is registred!";
+            }
+            else
+            {
+                return $"the port is already registered";
+            }
         }
         [HttpGet]
         [Route("GetId")]
@@ -66,13 +74,15 @@ namespace WebApplication1_1.Controllers
             int port_ = sPorts.ToArray()[key_pos];
             using (HttpClient client = new HttpClient())
             {
+                 string apof = '"'.ToString();
                 var values = new Dictionary<string, string>
 {
-    { $"token","'"+ inpname+"'" },
+    { $"token",apof+ inpname+apof },
     { "info","'"+ inpvalue+"'" }
 };
                 var content = new FormUrlEncodedContent(values);
-                var req = client.PostAsync($"http://localhost:{port_}/setinfo", content).Result;
+                string query = $"?token={apof}{inpname}{apof}&info={apof}{inpvalue}{apof}";
+                var req = client.PostAsync($"http://localhost:{port_}/setinfo"+query,null).Result;
                 Console.WriteLine($"result='{req.Content.ReadAsStringAsync().Result}'");
             }
            return Redirect(@"Index");
@@ -82,6 +92,38 @@ namespace WebApplication1_1.Controllers
         public JsonResult SlavesPorts()
         {
             return new  JsonResult(sPorts.ToArray());
+        }
+        [HttpGet]
+        [Route("GetAllData")]
+        public JsonResult GetAllData()
+        {
+            Dictionary<string, string>[]slavesContents=new Dictionary<string, string>[sPorts.Count];
+            int[] ports_ = sPorts.ToArray();
+            Task.Run(async () => {
+                for (int i = 0; i < sPorts.Count; i++)
+                {
+                    using (HttpClient client = new HttpClient())
+                    {
+                        var res = await client.GetFromJsonAsync<Dictionary<string,string>>($"http://localhost:{ports_[i]}/getall");
+                        slavesContents[i] = new Dictionary<string, string>();
+                        if (res != null)
+                        {
+                            await Task.Run(() =>
+                            {
+                                foreach(var item in res)
+                                    slavesContents[i].Add(item.Key, item.Value);    
+                            });
+                        }
+                    }
+                }
+            }).Wait();
+            Dictionary<string, string> total = new Dictionary<string, string>();
+            foreach(var slav in slavesContents)
+            {
+                foreach(var item in slav)
+                    total.Add(item.Key, item.Value);
+            }
+            return new JsonResult(slavesContents);
         }
     }
 }
