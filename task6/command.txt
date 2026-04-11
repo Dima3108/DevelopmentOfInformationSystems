@@ -1,0 +1,1 @@
+ podman exec -it interesting_kilby /opt/kafka/bin/kafka-topics.sh --create --topic transactions --partitions 3 --replication-factor 2
